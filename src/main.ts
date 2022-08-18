@@ -8,6 +8,10 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true,
     forbidNonWhitelisted: true,
+    transform: true, //Transforma la informacion de los dtos a los tipos deseados
+    transformOptions: {
+      enableImplicitConversion: true,
+    }
   }));
   await app.listen(3000);
 }
