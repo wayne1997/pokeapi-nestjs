@@ -28,7 +28,7 @@ lerna-debug.log*
 *.sublime-workspace
 /mongo
 .env
-
+.env.prod
 yarn.lock
 
 # IDE - VSCode
